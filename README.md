@@ -1,6 +1,9 @@
 # Aditya University Attendance Bot & Control Dashboard
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/manikanta3137/aditya-attendance-bot-)
+
 🚀 **Local Web Portal Link:** [http://localhost:3000](http://localhost:3000)
+
 
 A production-grade, full-stack attendance management system featuring a **Direct WhatsApp Chatbot** (powered by `whatsapp-web.js` running on your own WhatsApp account) and a secure **Faculty/HOD Administration Dashboard**.
 
