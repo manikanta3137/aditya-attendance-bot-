@@ -1,0 +1,7053 @@
+[
+    {
+        "roll": "23CSE001",
+        "name": "Student_1",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 143,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML002",
+        "name": "Student_2",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 128,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS003",
+        "name": "Student_3",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 98,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE004",
+        "name": "Student_4",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 142,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE005",
+        "name": "Student_5",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 125,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT006",
+        "name": "Student_6",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 113,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH007",
+        "name": "Student_7",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL008",
+        "name": "Student_8",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 122,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER009",
+        "name": "Student_9",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 100,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS010",
+        "name": "Student_10",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 75,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE011",
+        "name": "Student_11",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 106,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML012",
+        "name": "Student_12",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 96,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS013",
+        "name": "Student_13",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 129,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE014",
+        "name": "Student_14",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 145,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE015",
+        "name": "Student_15",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 82,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT016",
+        "name": "Student_16",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 139,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH017",
+        "name": "Student_17",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 146,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL018",
+        "name": "Student_18",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 70,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER019",
+        "name": "Student_19",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 117,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS020",
+        "name": "Student_20",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 112,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE021",
+        "name": "Student_21",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 123,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML022",
+        "name": "Student_22",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 103,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS023",
+        "name": "Student_23",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 101,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE024",
+        "name": "Student_24",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 102,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE025",
+        "name": "Student_25",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 70,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT026",
+        "name": "Student_26",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 85,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH027",
+        "name": "Student_27",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 125,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL028",
+        "name": "Student_28",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 118,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER029",
+        "name": "Student_29",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 115,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS030",
+        "name": "Student_30",
+        "branch": "CIVIL",
+        "subjects": {
+            "Data Mining": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 145,
+                "conducted": 150
+            }
+        },
+        "phone": ""
+    },
+    {
+        "roll": "23CSE031",
+        "name": "Student_31",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 101,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML032",
+        "name": "Student_32",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 80,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS033",
+        "name": "Student_33",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 101,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE034",
+        "name": "Student_34",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE035",
+        "name": "Student_35",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 123,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT036",
+        "name": "Student_36",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 128,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH037",
+        "name": "Student_37",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 97,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL038",
+        "name": "Student_38",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 109,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER039",
+        "name": "Student_39",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 131,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS040",
+        "name": "Student_40",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 101,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE041",
+        "name": "Student_41",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 136,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML042",
+        "name": "Student_42",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS043",
+        "name": "Student_43",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 93,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE044",
+        "name": "Student_44",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 97,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE045",
+        "name": "Student_45",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 85,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT046",
+        "name": "Student_46",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 117,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH047",
+        "name": "Student_47",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 99,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL048",
+        "name": "Student_48",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 109,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER049",
+        "name": "Student_49",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS050",
+        "name": "Student_50",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 139,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE051",
+        "name": "Student_51",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 120,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML052",
+        "name": "Student_52",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 141,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS053",
+        "name": "Student_53",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 138,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE054",
+        "name": "Student_54",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 76,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE055",
+        "name": "Student_55",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 74,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT056",
+        "name": "Student_56",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 132,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH057",
+        "name": "Student_57",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 96,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL058",
+        "name": "Student_58",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 108,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER059",
+        "name": "Student_59",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 84,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS060",
+        "name": "Student_60",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 139,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE061",
+        "name": "Student_61",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 113,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML062",
+        "name": "Student_62",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 125,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS063",
+        "name": "Student_63",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 92,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE064",
+        "name": "Student_64",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 143,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE065",
+        "name": "Student_65",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 131,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT066",
+        "name": "Student_66",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 145,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH067",
+        "name": "Student_67",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 136,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL068",
+        "name": "Student_68",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 82,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER069",
+        "name": "Student_69",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 96,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS070",
+        "name": "Student_70",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 85,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE071",
+        "name": "Student_71",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 85,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML072",
+        "name": "Student_72",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 140,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS073",
+        "name": "Student_73",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 141,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE074",
+        "name": "Student_74",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 93,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE075",
+        "name": "Student_75",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 143,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT076",
+        "name": "Student_76",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH077",
+        "name": "Student_77",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 126,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL078",
+        "name": "Student_78",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 72,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER079",
+        "name": "Student_79",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 102,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS080",
+        "name": "Student_80",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 81,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE081",
+        "name": "Student_81",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 92,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML082",
+        "name": "Student_82",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 146,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS083",
+        "name": "Student_83",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 118,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE084",
+        "name": "Student_84",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 72,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE085",
+        "name": "Student_85",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 94,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT086",
+        "name": "Student_86",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 147,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH087",
+        "name": "Student_87",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 142,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL088",
+        "name": "Student_88",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 99,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER089",
+        "name": "Student_89",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 91,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS090",
+        "name": "Student_90",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 119,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE091",
+        "name": "Student_91",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 92,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML092",
+        "name": "Student_92",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 133,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS093",
+        "name": "Student_93",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 107,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE094",
+        "name": "Student_94",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 123,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE095",
+        "name": "Student_95",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 81,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT096",
+        "name": "Student_96",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 74,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH097",
+        "name": "Student_97",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL098",
+        "name": "Student_98",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 83,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER099",
+        "name": "Student_99",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 122,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS100",
+        "name": "Student_100",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 86,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE101",
+        "name": "Student_101",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 136,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML102",
+        "name": "Student_102",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 117,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS103",
+        "name": "Student_103",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 132,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 100,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE104",
+        "name": "Student_104",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 109,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 84,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE105",
+        "name": "Student_105",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 84,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT106",
+        "name": "Student_106",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 73,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH107",
+        "name": "Student_107",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 101,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL108",
+        "name": "Student_108",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 126,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER109",
+        "name": "Student_109",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 143,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS110",
+        "name": "Student_110",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 138,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE111",
+        "name": "Student_111",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 85,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 130,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML112",
+        "name": "Student_112",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 100,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS113",
+        "name": "Student_113",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 78,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE114",
+        "name": "Student_114",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 111,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE115",
+        "name": "Student_115",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 95,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT116",
+        "name": "Student_116",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 98,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 148,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH117",
+        "name": "Student_117",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 93,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL118",
+        "name": "Student_118",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 97,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER119",
+        "name": "Student_119",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 74,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 130,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS120",
+        "name": "Student_120",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 119,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE121",
+        "name": "Student_121",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 104,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML122",
+        "name": "Student_122",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 91,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS123",
+        "name": "Student_123",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 81,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 138,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE124",
+        "name": "Student_124",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 134,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE125",
+        "name": "Student_125",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 120,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT126",
+        "name": "Student_126",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 119,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH127",
+        "name": "Student_127",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 134,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 118,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL128",
+        "name": "Student_128",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 138,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER129",
+        "name": "Student_129",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 84,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS130",
+        "name": "Student_130",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 124,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 119,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE131",
+        "name": "Student_131",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 104,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 77,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 96,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML132",
+        "name": "Student_132",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 82,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 73,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 107,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS133",
+        "name": "Student_133",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 70,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 95,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 97,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE134",
+        "name": "Student_134",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 136,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 86,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 112,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE135",
+        "name": "Student_135",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 102,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT136",
+        "name": "Student_136",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 126,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 89,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 125,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 100,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH137",
+        "name": "Student_137",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 71,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 78,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 114,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 120,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 80,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 136,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL138",
+        "name": "Student_138",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 119,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 108,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER139",
+        "name": "Student_139",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 79,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 133,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 127,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS140",
+        "name": "Student_140",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 137,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 140,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 136,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CSE141",
+        "name": "Student_141",
+        "branch": "CSE",
+        "subjects": {
+            "Python": {
+                "attended": 129,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "OS": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "DAA": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Java": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Compiler Design": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Computer Graphics": {
+                "attended": 90,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 120,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIML142",
+        "name": "Student_142",
+        "branch": "AIML",
+        "subjects": {
+            "Python": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Machine Learning": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "NLP": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Computer Vision": {
+                "attended": 83,
+                "conducted": 150
+            },
+            "Data Mining": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 100,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23AIDS143",
+        "name": "Student_143",
+        "branch": "AIDS",
+        "subjects": {
+            "Data Science": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 108,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 113,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 150,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 103,
+                "conducted": 150
+            },
+            "Data Visualization": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "R Programming": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 72,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23ECE144",
+        "name": "Student_144",
+        "branch": "ECE",
+        "subjects": {
+            "Signals": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Digital Electronics": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "VLSI": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Communication Systems": {
+                "attended": 128,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Embedded Systems": {
+                "attended": 96,
+                "conducted": 150
+            },
+            "Microprocessors": {
+                "attended": 72,
+                "conducted": 150
+            },
+            "DSP": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "IoT": {
+                "attended": 107,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 149,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23EEE145",
+        "name": "Student_145",
+        "branch": "EEE",
+        "subjects": {
+            "Power Systems": {
+                "attended": 123,
+                "conducted": 150
+            },
+            "Machines": {
+                "attended": 131,
+                "conducted": 150
+            },
+            "Circuits": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "Control Systems": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Measurements": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Power Electronics": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "Electrical Drives": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "Renewable Energy": {
+                "attended": 121,
+                "conducted": 150
+            },
+            "Protection": {
+                "attended": 142,
+                "conducted": 150
+            },
+            "HV Engineering": {
+                "attended": 148,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23IT146",
+        "name": "Student_146",
+        "branch": "IT",
+        "subjects": {
+            "Java": {
+                "attended": 110,
+                "conducted": 150
+            },
+            "DBMS": {
+                "attended": 145,
+                "conducted": 150
+            },
+            "Web Technology": {
+                "attended": 84,
+                "conducted": 150
+            },
+            "Cloud Computing": {
+                "attended": 100,
+                "conducted": 150
+            },
+            "CN": {
+                "attended": 101,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 146,
+                "conducted": 150
+            },
+            "Cyber Security": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Mobile Computing": {
+                "attended": 93,
+                "conducted": 150
+            },
+            "Data Analytics": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Software Engineering": {
+                "attended": 116,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23MECH147",
+        "name": "Student_147",
+        "branch": "MECH",
+        "subjects": {
+            "Thermodynamics": {
+                "attended": 147,
+                "conducted": 150
+            },
+            "Mechanics": {
+                "attended": 106,
+                "conducted": 150
+            },
+            "Manufacturing": {
+                "attended": 127,
+                "conducted": 150
+            },
+            "CAD": {
+                "attended": 122,
+                "conducted": 150
+            },
+            "Heat Transfer": {
+                "attended": 135,
+                "conducted": 150
+            },
+            "Fluid Mechanics": {
+                "attended": 149,
+                "conducted": 150
+            },
+            "Machine Design": {
+                "attended": 102,
+                "conducted": 150
+            },
+            "Automation": {
+                "attended": 141,
+                "conducted": 150
+            },
+            "Industrial Engineering": {
+                "attended": 139,
+                "conducted": 150
+            },
+            "Robotics": {
+                "attended": 116,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CIVIL148",
+        "name": "Student_148",
+        "branch": "CIVIL",
+        "subjects": {
+            "Surveying": {
+                "attended": 118,
+                "conducted": 150
+            },
+            "Structures": {
+                "attended": 91,
+                "conducted": 150
+            },
+            "Geotechnical": {
+                "attended": 112,
+                "conducted": 150
+            },
+            "Transportation": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Concrete Tech": {
+                "attended": 105,
+                "conducted": 150
+            },
+            "Hydraulics": {
+                "attended": 143,
+                "conducted": 150
+            },
+            "Environmental Engineering": {
+                "attended": 116,
+                "conducted": 150
+            },
+            "Construction Management": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Steel Structures": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "Estimation": {
+                "attended": 89,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23CYBER149",
+        "name": "Student_149",
+        "branch": "CYBER",
+        "subjects": {
+            "Cyber Security": {
+                "attended": 138,
+                "conducted": 150
+            },
+            "Ethical Hacking": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Networks": {
+                "attended": 130,
+                "conducted": 150
+            },
+            "Cryptography": {
+                "attended": 87,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 94,
+                "conducted": 150
+            },
+            "Digital Forensics": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Cloud Security": {
+                "attended": 115,
+                "conducted": 150
+            },
+            "Web Security": {
+                "attended": 92,
+                "conducted": 150
+            },
+            "Malware Analysis": {
+                "attended": 75,
+                "conducted": 150
+            },
+            "SOC Operations": {
+                "attended": 79,
+                "conducted": 150
+            }
+        }
+    },
+    {
+        "roll": "23DS150",
+        "name": "Student_150",
+        "branch": "DS",
+        "subjects": {
+            "Data Mining": {
+                "attended": 76,
+                "conducted": 150
+            },
+            "Statistics": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Python": {
+                "attended": 111,
+                "conducted": 150
+            },
+            "Big Data": {
+                "attended": 97,
+                "conducted": 150
+            },
+            "ML": {
+                "attended": 144,
+                "conducted": 150
+            },
+            "Deep Learning": {
+                "attended": 117,
+                "conducted": 150
+            },
+            "Data Engineering": {
+                "attended": 88,
+                "conducted": 150
+            },
+            "Visualization": {
+                "attended": 148,
+                "conducted": 150
+            },
+            "AI": {
+                "attended": 99,
+                "conducted": 150
+            },
+            "Predictive Analytics": {
+                "attended": 139,
+                "conducted": 150
+            }
+        }
+    }
+]

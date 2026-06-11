@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: aditya-attendance-bot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/me
+    disk:
+      name: attendance-data
+      mountPath: /usr/src/app/data
+      sizeGB: 1
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /usr/src/app/data
+
