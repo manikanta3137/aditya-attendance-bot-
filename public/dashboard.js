@@ -359,6 +359,27 @@ async function importCSV() {
     }
 }
 
+// Log out of WhatsApp from the dashboard
+async function logoutWhatsApp() {
+    if (!confirm("⚠️ WARNING: Are you sure you want to disconnect your WhatsApp account from the chatbot? This will shut down the bot until it is scanned again.")) {
+        return;
+    }
+    
+    try {
+        const res = await fetch('/api/logout-whatsapp', { method: 'POST' });
+        const data = await res.json();
+        
+        if (res.ok && data.success) {
+            alert("✅ Disconnected from WhatsApp successfully! The local session has been cleared.");
+            checkWhatsAppStatus();
+        } else {
+            alert(`❌ Disconnect Failed: ${data.error}`);
+        }
+    } catch (err) {
+        alert("❌ Error sending disconnect request: " + err.message);
+    }
+}
+
 // Toggle QR Setup Modal
 function toggleQrModal() {
     const modal = document.getElementById("qrModal");

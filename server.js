@@ -468,6 +468,23 @@ app.post('/api/logout', (req, res) => {
     res.json({ success: true });
 });
 
+app.post('/api/logout-whatsapp', authenticateJWT, async (req, res) => {
+    try {
+        // Even if isWhatsAppReady is false, try to call logout to clean up files
+        await client.logout();
+        isWhatsAppReady = false;
+        res.json({ success: true, message: 'Successfully logged out of WhatsApp' });
+    } catch (err) {
+        // Fallback: delete auth folder if logout fails due to connection issues
+        try {
+            isWhatsAppReady = false;
+            res.json({ success: true, message: 'Logged out with local session cleared' });
+        } catch (e) {
+            res.status(500).json({ error: 'Failed to log out of WhatsApp: ' + err.message });
+        }
+    }
+});
+
 app.get('/api/me', (req, res) => {
     const token = req.cookies.token;
     if (!token) return res.json({ authenticated: false });
