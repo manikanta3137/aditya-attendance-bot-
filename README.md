@@ -2,7 +2,7 @@
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/manikanta3137/aditya-attendance-bot-)
 
-🚀 **Local Web Portal Link:** [http://localhost:3000](http://localhost:3000)
+🚀 **Public Web Portal Link:** [https://empty-troubleshooting-any-statutory.trycloudflare.com](https://empty-troubleshooting-any-statutory.trycloudflare.com)
 
 
 A production-grade, full-stack attendance management system featuring a **Direct WhatsApp Chatbot** (powered by `whatsapp-web.js` running on your own WhatsApp account) and a secure **Faculty/HOD Administration Dashboard**.
@@ -81,13 +81,13 @@ graph TD
    npm start
    ```
 4. **Open the Dashboard**:
-   Open **[http://localhost:3000](http://localhost:3000)** in your browser.
+   Open **[https://empty-troubleshooting-any-statutory.trycloudflare.com](https://empty-troubleshooting-any-statutory.trycloudflare.com)** in your browser.
 
 ---
 
 ## 📲 Linking Your WhatsApp Account
 
-1. Open the dashboard at **[http://localhost:3000](http://localhost:3000)**.
+1. Open the dashboard at **[https://empty-troubleshooting-any-statutory.trycloudflare.com](https://empty-troubleshooting-any-statutory.trycloudflare.com)**.
 2. In the top-right header, click the red **`🔴 Setup Bot`** badge.
 3. Open WhatsApp on your phone (`9398881606`) -> **Linked Devices** -> **Link a Device**.
 4. Scan the QR code shown in the popup window.
