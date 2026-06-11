@@ -50,7 +50,9 @@ for (const p of chromePaths) {
 
 const client = new Client({
     authStrategy: new LocalAuth(),
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     puppeteer: {
+
         headless: true,
         executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChromePath || undefined, // Use env or local Chrome to bypass Chromium download
         args: [
@@ -60,8 +62,11 @@ const client = new Client({
             '--disable-accelerated-2d-canvas',
             '--no-first-run',
             '--no-zygote',
-            '--disable-gpu'
+            '--disable-gpu',
+            '--ignore-certificate-errors',
+            '--ignore-certificate-errors-spki-list'
         ]
+
     }
 });
 
@@ -110,12 +115,33 @@ client.on('ready', () => {
 
 client.on('auth_failure', (msg) => {
     console.error('WhatsApp Authentication failure:', msg);
+    isWhatsAppReady = false;
+    // Re-initialize to get a new QR code
+    client.initialize().catch(err => {
+        console.error('Failed to re-initialize WhatsApp client after auth failure:', err.message);
+    });
 });
 
 client.on('disconnected', (reason) => {
     isWhatsAppReady = false;
     console.warn('WhatsApp Client was disconnected:', reason);
+    
+    // Clean up old QR code image
+    try {
+        const qrPath = path.join(__dirname, 'public', 'qr.png');
+        if (fs.existsSync(qrPath)) {
+            fs.unlinkSync(qrPath);
+            console.log('Cleaned up old qr.png on disconnect');
+        }
+    } catch (e) {}
+
+    // Auto-reinitialize client to generate a new QR scanner instantly
+    console.log('Re-initializing WhatsApp client to generate a new QR code...');
+    client.initialize().catch(err => {
+        console.error('Failed to re-initialize WhatsApp client on disconnect:', err.message);
+    });
 });
+
 
 /* ==========================================
    WHATSAPP CHATBOT CONVERSATION FLOW
