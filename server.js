@@ -138,7 +138,8 @@ client.on('message_create', async (msg) => {
     }
 
     // Check if sender is HOD / Admin
-    const isAdmin = from.includes('9398881606');
+    const adminPhone = process.env.ADMIN_PHONE_NUMBER || '9398881606';
+    const isAdmin = from.includes(adminPhone);
     if (isAdmin) {
         let session = sessions.get(from);
         if (!session || bodyUpper === 'RESET' || bodyUpper === 'START' || bodyUpper === 'HI' || bodyUpper === 'HELLO' || bodyUpper === 'MENU') {
