@@ -1,5 +1,7 @@
 # Aditya University Attendance Bot & Control Dashboard
 
+🚀 **Local Web Portal Link:** [http://localhost:3000](http://localhost:3000)
+
 A production-grade, full-stack attendance management system featuring a **Direct WhatsApp Chatbot** (powered by `whatsapp-web.js` running on your own WhatsApp account) and a secure **Faculty/HOD Administration Dashboard**.
 
 It is pre-populated with **150 student profiles** (1,500 active attendance records) from the Aditya University Excel dataset, persisted locally inside a lightweight JSON database.
