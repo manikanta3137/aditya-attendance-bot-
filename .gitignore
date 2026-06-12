@@ -5,4 +5,5 @@ node_modules/
 .wwebjs_cache/
 extensions/
 cloudflared.exe
+public/qr.png
 
