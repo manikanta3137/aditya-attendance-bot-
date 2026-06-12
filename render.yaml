@@ -5,10 +5,6 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/me
-    disk:
-      name: attendance-data
-      mountPath: /usr/src/app/data
-      sizeGB: 1
     envVars:
       - key: PORT
         value: 3000
