@@ -4,11 +4,27 @@ const path = require('path');
 const dbDir = process.env.DATABASE_PATH || __dirname;
 const dbPath = path.join(dbDir, 'attendance.json');
 
-// Helper to read database
+// Helper to read database with auto-seeding fallback
 function readDatabase() {
     try {
-        if (!fs.existsSync(dbPath)) {
-            // Write empty array if not exists
+        if (!fs.existsSync(dbPath) || fs.readFileSync(dbPath, 'utf8').trim() === '[]' || fs.readFileSync(dbPath, 'utf8').trim() === '') {
+            // Auto-seed from database.js if attendance.json is missing or empty
+            const dbJsPath = path.join(__dirname, 'database.js');
+            if (fs.existsSync(dbJsPath)) {
+                console.log('Database missing or empty. Auto-seeding from database.js...');
+                const content = fs.readFileSync(dbJsPath, 'utf8');
+                const jsonStartIdx = content.indexOf('[');
+                const jsonEndIdx = content.lastIndexOf(']') + 1;
+                if (jsonStartIdx !== -1 && jsonEndIdx > 0) {
+                    const jsonStr = content.substring(jsonStartIdx, jsonEndIdx);
+                    const students = JSON.parse(jsonStr);
+                    fs.writeFileSync(dbPath, JSON.stringify(students, null, 4), 'utf8');
+                    console.log(`Auto-seeded ${students.length} students successfully.`);
+                    return students;
+                }
+            }
+            
+            // Fallback if database.js doesn't exist
             fs.writeFileSync(dbPath, JSON.stringify([]));
             return [];
         }
@@ -33,9 +49,7 @@ function writeDatabase(data) {
 
 // Initialize schema (creates JSON if missing)
 async function initializeSchema() {
-    if (!fs.existsSync(dbPath)) {
-        writeDatabase([]);
-    }
+    readDatabase(); // Trigger auto-seeding on init
     console.log('JSON file database initialized: attendance.json');
 }
 

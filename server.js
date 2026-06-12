@@ -50,11 +50,11 @@ for (const p of chromePaths) {
 
 const client = new Client({
     authStrategy: new LocalAuth(),
+    authTimeoutMs: 90000,
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     puppeteer: {
-
         headless: true,
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChromePath || undefined, // Use env or local Chrome to bypass Chromium download
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChromePath || undefined,
         args: [
             '--no-sandbox', 
             '--disable-setuid-sandbox',
@@ -64,9 +64,11 @@ const client = new Client({
             '--no-zygote',
             '--disable-gpu',
             '--ignore-certificate-errors',
-            '--ignore-certificate-errors-spki-list'
+            '--ignore-certificate-errors-spki-list',
+            '--disable-extensions',
+            '--disable-default-apps',
+            '--js-flags="--max-old-space-size=150"'
         ]
-
     }
 });
 
@@ -799,6 +801,11 @@ function parseCSVLine(line) {
 }
 
 // Start Server
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+    try {
+        await db.initializeSchema();
+    } catch (err) {
+        console.error('Failed to initialize database schema:', err.message);
+    }
     console.log(`Server is running on http://localhost:${PORT}`);
 });
