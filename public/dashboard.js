@@ -323,6 +323,15 @@ async function exportCSV() {
         if (!res.ok) throw new Error('Failed to generate CSV');
         const csvText = await res.text();
         document.getElementById("csvTextArea").value = csvText;
+        
+        // Reset file input and status display
+        const fileInput = document.getElementById("csvFileInput");
+        if (fileInput) fileInput.value = "";
+        const fileStatus = document.getElementById("fileStatus");
+        if (fileStatus) {
+            fileStatus.innerText = "";
+            fileStatus.style.display = "none";
+        }
     } catch (err) {
         alert('❌ Export Error: ' + err.message);
     }
@@ -331,7 +340,7 @@ async function exportCSV() {
 async function importCSV() {
     const csvText = document.getElementById("csvTextArea").value.trim();
     if (!csvText) {
-        alert("Please paste some CSV records first!");
+        alert("Please paste or upload some CSV records first!");
         return;
     }
 
@@ -351,6 +360,15 @@ async function importCSV() {
         if (res.ok) {
             alert("✅ Database successfully overwritten and seeded from CSV!");
             loadStudentDatabase();
+            
+            // Reset file input and status display
+            const fileInput = document.getElementById("csvFileInput");
+            if (fileInput) fileInput.value = "";
+            const fileStatus = document.getElementById("fileStatus");
+            if (fileStatus) {
+                fileStatus.innerText = "";
+                fileStatus.style.display = "none";
+            }
         } else {
             alert(`❌ Import Failed: ${data.error}`);
         }
@@ -440,6 +458,33 @@ async function checkWhatsAppStatus() {
     } catch (err) {
         console.error('Error checking WhatsApp status:', err);
     }
+}
+
+// Handle client-side CSV file upload selection
+function handleFileSelect(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    if (!file.name.endsWith('.csv')) {
+        alert('❌ Please select a valid CSV file (.csv)');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        const text = evt.target.result;
+        document.getElementById("csvTextArea").value = text;
+        
+        const fileStatus = document.getElementById("fileStatus");
+        if (fileStatus) {
+            fileStatus.innerText = `📄 Loaded: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+            fileStatus.style.display = "inline";
+        }
+    };
+    reader.onerror = function() {
+        alert('❌ Failed to read CSV file.');
+    };
+    reader.readAsText(file);
 }
 
 // Initialize wiring

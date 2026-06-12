@@ -132,9 +132,16 @@
                 <!-- TAB 2: IMPORT/EXPORT DATASET -->
                 <div id="importExportTab" class="tab-pane">
                     <div class="import-area">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);">Dataset (CSV Format)</span>
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+                            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                                <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);">Dataset (CSV Format)</span>
+                                <span id="fileStatus" style="font-size: 0.75rem; color: #34d399; display: none;"></span>
+                            </div>
                             <div style="display: flex; gap: 0.5rem;">
+                                <input type="file" id="csvFileInput" accept=".csv" style="display: none;" onchange="handleFileSelect(event)">
+                                <button class="btn-secondary" style="background: rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.4); color: #60a5fa;" onclick="document.getElementById('csvFileInput').click()">
+                                    <i class="fa-solid fa-file-csv"></i> Choose File
+                                </button>
                                 <button class="btn-secondary" onclick="exportCSV()"><i class="fa-solid fa-arrows-rotate"></i> Reload CSV</button>
                                 <button class="btn-primary" onclick="importCSV()"><i class="fa-solid fa-file-arrow-up"></i> Import & Overwrite</button>
                             </div>
