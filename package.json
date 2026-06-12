@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "dev": "node start-tunnel.js",
     "init-db": "node init-db.js"
   },
   "dependencies": {
