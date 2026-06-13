@@ -109,9 +109,19 @@ async function loadStudentDatabase(query = "") {
         const students = await res.json();
         tbody.innerHTML = "";
 
+        // Calculate and display live summary metrics
+        const totalStudents = students.length;
+        let sumPercentage = 0;
+        let defaultersCount = 0;
+
         students.forEach(student => {
             const stats = calculateStats(student);
-            
+            const pctVal = parseFloat(stats.percentage) || 0;
+            sumPercentage += pctVal;
+            if (pctVal < 75.0) {
+                defaultersCount++;
+            }
+
             let statusBadgeClass = "badge-success";
             if (stats.classesToAttend > 0) {
                 statusBadgeClass = stats.classesToAttend > 10 ? "badge-danger" : "badge-warning";
@@ -132,6 +142,16 @@ async function loadStudentDatabase(query = "") {
             `;
             tbody.appendChild(tr);
         });
+
+        // Update summary metrics DOM elements
+        const avgPercentage = totalStudents > 0 ? (sumPercentage / totalStudents).toFixed(1) : "0.0";
+        const totalStudentsEl = document.getElementById("metricTotalStudents");
+        const avgAttendanceEl = document.getElementById("metricAvgAttendance");
+        const defaultersEl = document.getElementById("metricDefaulters");
+
+        if (totalStudentsEl) totalStudentsEl.innerText = totalStudents;
+        if (avgAttendanceEl) avgAttendanceEl.innerText = `${avgPercentage}%`;
+        if (defaultersEl) defaultersEl.innerText = defaultersCount;
 
     } catch (err) {
         console.error('Error loading student table:', err.message);
@@ -425,11 +445,20 @@ async function checkWhatsAppStatus() {
         const qrInstructions = document.getElementById("qrInstructions");
         const connectedAlert = document.getElementById("whatsappConnectedAlert");
 
+        const metricWhatsappStatus = document.getElementById("metricWhatsappStatus");
+        const whatsappMetricIcon = document.getElementById("whatsappMetricIcon");
+
         if (data.whatsappReady) {
             // Bot Connected
             if (statusDot) statusDot.style.background = "#10b981";
             if (statusText) statusText.innerText = "WhatsApp Linked";
             
+            if (metricWhatsappStatus) metricWhatsappStatus.innerText = "Online";
+            if (whatsappMetricIcon) {
+                whatsappMetricIcon.classList.remove("red");
+                whatsappMetricIcon.classList.add("green");
+            }
+
             if (qrImg) qrImg.style.display = "none";
             if (qrSpinner) qrSpinner.style.display = "none";
             if (qrInstructions) qrInstructions.style.display = "none";
@@ -438,6 +467,12 @@ async function checkWhatsAppStatus() {
             // Bot Disconnected
             if (statusDot) statusDot.style.background = "#f43f5e";
             if (statusText) statusText.innerText = "Setup Bot";
+
+            if (metricWhatsappStatus) metricWhatsappStatus.innerText = "Offline";
+            if (whatsappMetricIcon) {
+                whatsappMetricIcon.classList.remove("green");
+                whatsappMetricIcon.classList.add("red");
+            }
             
             if (connectedAlert) connectedAlert.style.display = "none";
             if (qrInstructions) qrInstructions.style.display = "block";
