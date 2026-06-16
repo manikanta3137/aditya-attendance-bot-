@@ -1,6 +1,7 @@
 {
   "name": "college-whatsapp-chatbot",
   "version": "1.0.0",
+  "homepage": "https://aditya-attendance-bot.onrender.com",
   "description": "WhatsApp chatbot and authenticated Faculty/HOD attendance dashboard",
   "main": "server.js",
   "scripts": {
