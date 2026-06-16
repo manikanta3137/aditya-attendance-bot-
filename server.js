@@ -46,8 +46,17 @@ for (const p of chromePaths) {
     if (p && fs.existsSync(p)) {
         systemChromePath = p;
         console.log('Detected local Google Chrome at:', systemChromePath);
-        break;
     }
+}
+
+function formatWhatsAppJid(phone) {
+    if (!phone) return null;
+    let clean = phone.toString().replace(/\D/g, '');
+    if (!clean) return null;
+    if (clean.length === 10) {
+        clean = '91' + clean;
+    }
+    return `${clean}@c.us`;
 }
 
 let client = null;
@@ -190,9 +199,8 @@ Welcome back! You have administrative access to Aditya University attendance rec
                             
                             const overallPct = totalConducted > 0 ? (totalAttended / totalConducted) * 100 : 0;
                             if (overallPct < 75.0) {
-                                const cleanPhone = student.phone.replace(/\D/g, '');
-                                if (cleanPhone) {
-                                    const targetJid = cleanPhone.includes('@c.us') ? cleanPhone : `${cleanPhone}@c.us`;
+                                const targetJid = formatWhatsAppJid(student.phone);
+                                if (targetJid) {
                                     const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
                                     const adviceText = `You need to attend *${classesToAttend}* more consecutive classes to maintain *75%* attendance.`;
                                     
@@ -695,14 +703,11 @@ app.post('/api/students/:roll/send-alert', authenticateJWT, async (req, res) => 
 
 _Please login to your student portal or contact HOD for subject-wise details._`;
 
-        // Strip non-digits from phone number
-        const cleanPhone = student.phone.replace(/\D/g, '');
-        if (!cleanPhone) {
+        // Format JID for WhatsApp
+        const targetJid = formatWhatsAppJid(student.phone);
+        if (!targetJid) {
             return res.status(400).json({ error: 'Invalid phone number format' });
         }
-
-        // Format JID for WhatsApp
-        const targetJid = cleanPhone.includes('@c.us') ? cleanPhone : `${cleanPhone}@c.us`;
 
         // If WhatsApp client is not linked yet, run in demo mode
         if (!isWhatsAppReady) {
