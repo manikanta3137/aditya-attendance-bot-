@@ -4,7 +4,9 @@ const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const path = require('path');
-const { Client, LocalAuth } = require('whatsapp-web.js');
+const { Client, LocalAuth, RemoteAuth } = require('whatsapp-web.js');
+const mongoose = require('mongoose');
+const { MongoStore } = require('wwebjs-mongo');
 const qrcodeTerminal = require('qrcode-terminal');
 const QRCode = require('qrcode');
 const db = require('./db');
@@ -48,133 +50,114 @@ for (const p of chromePaths) {
     }
 }
 
-const client = new Client({
-    authStrategy: new LocalAuth(),
-    authTimeoutMs: 90000,
-    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-    puppeteer: {
-        headless: true,
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChromePath || undefined,
-        args: [
-            '--no-sandbox', 
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-accelerated-2d-canvas',
-            '--no-first-run',
-            '--no-zygote',
-            '--disable-gpu',
-            '--ignore-certificate-errors',
-            '--ignore-certificate-errors-spki-list',
-            '--disable-extensions',
-            '--disable-default-apps',
-            '--js-flags="--max-old-space-size=150"'
-        ]
-    }
-});
-
+let client = null;
 let isWhatsAppReady = false;
 
-client.on('qr', async (qr) => {
-    console.log('\n==================================================================');
-    console.log('   ⚠️ SCAN THE QR CODE BELOW WITH YOUR WHATSAPP LINKED DEVICES   ');
-    console.log('==================================================================\n');
-    qrcodeTerminal.generate(qr, { small: true });
-    console.log('\n==================================================================\n');
+function registerClientEvents(clientInstance) {
+    clientInstance.on('qr', async (qr) => {
+        console.log('\n==================================================================');
+        console.log('   ⚠️ SCAN THE QR CODE BELOW WITH YOUR WHATSAPP LINKED DEVICES   ');
+        console.log('==================================================================\n');
+        qrcodeTerminal.generate(qr, { small: true });
+        console.log('\n==================================================================\n');
 
-    // Generate QR code as PNG image inside public folder
-    try {
-        const qrPath = path.join(__dirname, 'public', 'qr.png');
-        await QRCode.toFile(qrPath, qr, {
-            color: {
-                dark: '#0f172a', // Slate-900 color for dark aesthetic
-                light: '#ffffff'
-            },
-            width: 300
+        // Generate QR code as PNG image inside public folder
+        try {
+            const qrPath = path.join(__dirname, 'public', 'qr.png');
+            await QRCode.toFile(qrPath, qr, {
+                color: {
+                    dark: '#0f172a', // Slate-900 color for dark aesthetic
+                    light: '#ffffff'
+                },
+                width: 300
+            });
+            console.log('Generated QR image at public/qr.png');
+        } catch (err) {
+            console.error('Failed to generate QR image file:', err.message);
+        }
+    });
+
+    clientInstance.on('ready', () => {
+        isWhatsAppReady = true;
+        console.log('\n==================================================================');
+        console.log('      🎉 SUCCESS: WhatsApp Client is Ready and Logged In!         ');
+        console.log('==================================================================\n');
+
+        // Delete QR image when successfully connected
+        try {
+            const qrPath = path.join(__dirname, 'public', 'qr.png');
+            if (fs.existsSync(qrPath)) {
+                fs.unlinkSync(qrPath);
+                console.log('Cleaned up public/qr.png');
+            }
+        } catch (e) {
+            console.error('Failed to delete QR image:', e.message);
+        }
+    });
+
+    clientInstance.on('remote_session_saved', () => {
+        console.log('[WhatsApp] Remote session saved successfully to MongoDB.');
+    });
+
+    clientInstance.on('auth_failure', (msg) => {
+        console.error('WhatsApp Authentication failure:', msg);
+        isWhatsAppReady = false;
+        console.log('Re-initializing WhatsApp client after authentication failure...');
+        initializeWhatsAppClient().catch(err => {
+            console.error('Failed to re-initialize WhatsApp client after auth failure:', err.message);
         });
-        console.log('Generated QR image at public/qr.png');
-    } catch (err) {
-        console.error('Failed to generate QR image file:', err.message);
-    }
-});
-
-client.on('ready', () => {
-    isWhatsAppReady = true;
-    console.log('\n==================================================================');
-    console.log('      🎉 SUCCESS: WhatsApp Client is Ready and Logged In!         ');
-    console.log('==================================================================\n');
-
-    // Delete QR image when successfully connected
-    try {
-        const qrPath = path.join(__dirname, 'public', 'qr.png');
-        if (fs.existsSync(qrPath)) {
-            fs.unlinkSync(qrPath);
-            console.log('Cleaned up public/qr.png');
-        }
-    } catch (e) {
-        console.error('Failed to delete QR image:', e.message);
-    }
-});
-
-client.on('auth_failure', (msg) => {
-    console.error('WhatsApp Authentication failure:', msg);
-    isWhatsAppReady = false;
-    // Re-initialize to get a new QR code
-    client.initialize().catch(err => {
-        console.error('Failed to re-initialize WhatsApp client after auth failure:', err.message);
     });
-});
 
-client.on('disconnected', (reason) => {
-    isWhatsAppReady = false;
-    console.warn('WhatsApp Client was disconnected:', reason);
-    
-    // Clean up old QR code image
-    try {
-        const qrPath = path.join(__dirname, 'public', 'qr.png');
-        if (fs.existsSync(qrPath)) {
-            fs.unlinkSync(qrPath);
-            console.log('Cleaned up old qr.png on disconnect');
-        }
-    } catch (e) {}
+    clientInstance.on('disconnected', (reason) => {
+        isWhatsAppReady = false;
+        console.warn('WhatsApp Client was disconnected:', reason);
+        
+        // Clean up old QR code image
+        try {
+            const qrPath = path.join(__dirname, 'public', 'qr.png');
+            if (fs.existsSync(qrPath)) {
+                fs.unlinkSync(qrPath);
+                console.log('Cleaned up old qr.png on disconnect');
+            }
+        } catch (e) {}
 
-    // Auto-reinitialize client to generate a new QR scanner instantly
-    console.log('Re-initializing WhatsApp client to generate a new QR code...');
-    client.initialize().catch(err => {
-        console.error('Failed to re-initialize WhatsApp client on disconnect:', err.message);
+        // Auto-reinitialize client to generate a new QR scanner instantly
+        console.log('Re-initializing WhatsApp client to generate a new QR code...');
+        initializeWhatsAppClient().catch(err => {
+            console.error('Failed to re-initialize WhatsApp client on disconnect:', err.message);
+        });
     });
-});
 
+    /* ==========================================
+       WHATSAPP CHATBOT CONVERSATION FLOW
+       ========================================== */
+    clientInstance.on('message_create', async (msg) => {
+        const from = msg.from; // e.g. '919876543210@c.us'
+        const body = msg.body ? msg.body.trim() : '';
+        const bodyUpper = body.toUpperCase();
 
-/* ==========================================
-   WHATSAPP CHATBOT CONVERSATION FLOW
-   ========================================== */
-client.on('message_create', async (msg) => {
-    const from = msg.from; // e.g. '919876543210@c.us'
-    const body = msg.body ? msg.body.trim() : '';
-    const bodyUpper = body.toUpperCase();
+        // Ignore group chats
+        if (from && from.endsWith('@g.us')) return;
 
-    // Ignore group chats
-    if (from && from.endsWith('@g.us')) return;
-
-    // Prevent loop: ignore messages sent by the bot to others,
-    // but allow messages sent by the user to themselves (self-chats).
-    if (msg.fromMe) {
-        const myJid = client.info && client.info.wid && client.info.wid._serialized;
-        if (!myJid || msg.to !== myJid) {
-            return;
+        // Prevent loop: ignore messages sent by the bot to others,
+        // but allow messages sent by the user to themselves (self-chats).
+        if (msg.fromMe) {
+            const myJid = clientInstance.info && clientInstance.info.wid && clientInstance.info.wid._serialized;
+            if (!myJid || msg.to !== myJid) {
+                return;
+            }
         }
-    }
 
-    // Check if sender is HOD / Admin
-    const adminPhone = process.env.ADMIN_PHONE_NUMBER || '9398881606';
-    const isAdmin = from.includes(adminPhone);
-    if (isAdmin) {
-        let session = sessions.get(from);
-        if (!session || bodyUpper === 'RESET' || bodyUpper === 'START' || bodyUpper === 'HI' || bodyUpper === 'HELLO' || bodyUpper === 'MENU') {
-            session = { step: 'ADMIN_MENU' };
-            sessions.set(from, session);
-            
-            const menuText = `👑 *HOD / Admin Control Menu*
+        // Check if sender is HOD / Admin
+        const adminPhone = process.env.ADMIN_PHONE_NUMBER || '9398881606';
+        const isAdmin = from.includes(adminPhone);
+        if (isAdmin) {
+            let session = sessions.get(from);
+            if (!session || bodyUpper === 'RESET' || bodyUpper === 'START' || bodyUpper === 'HI' || bodyUpper === 'HELLO' || bodyUpper === 'MENU') {
+                session = { step: 'ADMIN_MENU' };
+                sessions.set(from, session);
+                
+                const menuText = `👑 *HOD / Admin Control Menu*
 Welcome back! You have administrative access to Aditya University attendance records.
 
 *Commands:*
@@ -182,21 +165,69 @@ Welcome back! You have administrative access to Aditya University attendance rec
 • Type *SUMMARY* to view students with low attendance (<75%).
 • Type *ALERT ALL* to broadcast warning messages to all low attendance students.
 • Type *RESET* to return to this menu.`;
-            await msg.reply(menuText);
-            return;
-        }
+                await msg.reply(menuText);
+                return;
+            }
 
-        try {
-            if (session.step === 'CONFIRM_ALERT_ALL') {
-                if (bodyUpper === 'CONFIRM ALERT') {
-                    await msg.reply('⏳ Broadcasting warnings to students... Please wait.');
-                    const students = await db.getStudents();
-                    let count = 0;
-                    
-                    for (const student of students) {
-                        if (!student.phone) continue;
+            try {
+                if (session.step === 'CONFIRM_ALERT_ALL') {
+                    if (bodyUpper === 'CONFIRM ALERT') {
+                        await msg.reply('⏳ Broadcasting warnings to students... Please wait.');
+                        const students = await db.getStudents();
+                        let count = 0;
                         
-                        // Calculate attendance
+                        for (const student of students) {
+                            if (!student.phone) continue;
+                            
+                            // Calculate attendance
+                            let totalAttended = 0;
+                            let totalConducted = 0;
+                            for (let subName in student.subjects) {
+                                const sub = student.subjects[subName];
+                                totalAttended += parseInt(sub.attended) || 0;
+                                totalConducted += parseInt(sub.conducted) || 0;
+                            }
+                            
+                            const overallPct = totalConducted > 0 ? (totalAttended / totalConducted) * 100 : 0;
+                            if (overallPct < 75.0) {
+                                const cleanPhone = student.phone.replace(/\D/g, '');
+                                if (cleanPhone) {
+                                    const targetJid = cleanPhone.includes('@c.us') ? cleanPhone : `${cleanPhone}@c.us`;
+                                    const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
+                                    const adviceText = `You need to attend *${classesToAttend}* more consecutive classes to maintain *75%* attendance.`;
+                                    
+                                    const alertMessageText = `📋 *ATTENDANCE WARNING*
+👤 *Name:* ${student.name}
+🆔 *Roll No:* ${student.roll}
+📊 *Overall Attendance:* *${overallPct.toFixed(1)}%*
+💡 *Status:* ${adviceText}
+
+_Please login to your student portal or contact HOD for subject-wise details._`;
+                                    
+                                    try {
+                                        await clientInstance.sendMessage(targetJid, alertMessageText);
+                                        count++;
+                                    } catch (sendErr) {
+                                        console.error(`Failed to broadcast to ${targetJid}:`, sendErr.message);
+                                    }
+                                }
+                            }
+                        }
+                        
+                        session.step = 'ADMIN_MENU';
+                        await msg.reply(`✅ *Broadcast Complete!*\nSuccessfully sent warning messages to *${count}* students.`);
+                    } else {
+                        session.step = 'ADMIN_MENU';
+                        await msg.reply('❌ Broadcast cancelled. Returned to Admin Menu.');
+                    }
+                    return;
+                }
+
+                if (bodyUpper === 'SUMMARY') {
+                    const students = await db.getStudents();
+                    let lowAttList = [];
+                    
+                    students.forEach(student => {
                         let totalAttended = 0;
                         let totalConducted = 0;
                         for (let subName in student.subjects) {
@@ -204,131 +235,83 @@ Welcome back! You have administrative access to Aditya University attendance rec
                             totalAttended += parseInt(sub.attended) || 0;
                             totalConducted += parseInt(sub.conducted) || 0;
                         }
-                        
                         const overallPct = totalConducted > 0 ? (totalAttended / totalConducted) * 100 : 0;
                         if (overallPct < 75.0) {
-                            const cleanPhone = student.phone.replace(/\D/g, '');
-                            if (cleanPhone) {
-                                const targetJid = cleanPhone.includes('@c.us') ? cleanPhone : `${cleanPhone}@c.us`;
-                                const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
-                                const adviceText = `You need to attend *${classesToAttend}* more consecutive classes to maintain *75%* attendance.`;
-                                
-                                const alertMessageText = `📋 *ATTENDANCE WARNING*
-👤 *Name:* ${student.name}
-🆔 *Roll No:* ${student.roll}
-📊 *Overall Attendance:* *${overallPct.toFixed(1)}%*
-💡 *Status:* ${adviceText}
-
-_Please login to your student portal or contact HOD for subject-wise details._`;
-                                
-                                try {
-                                    await client.sendMessage(targetJid, alertMessageText);
-                                    count++;
-                                } catch (sendErr) {
-                                    console.error(`Failed to broadcast to ${targetJid}:`, sendErr.message);
-                                }
-                            }
+                            lowAttList.push({
+                                roll: student.roll,
+                                name: student.name,
+                                branch: student.branch,
+                                pct: overallPct
+                            });
                         }
+                    });
+
+                    if (lowAttList.length === 0) {
+                        await msg.reply('🎉 All students currently maintain attendance at or above *75%*!');
+                        return;
                     }
+
+                    // Sort by attendance ascending
+                    lowAttList.sort((a, b) => a.pct - b.pct);
+
+                    let summaryText = `📊 *Low Attendance Summary (<75%)*\nTotal students below criteria: *${lowAttList.length}*\n\n`;
                     
-                    session.step = 'ADMIN_MENU';
-                    await msg.reply(`✅ *Broadcast Complete!*\nSuccessfully sent warning messages to *${count}* students.`);
-                } else {
-                    session.step = 'ADMIN_MENU';
-                    await msg.reply('❌ Broadcast cancelled. Returned to Admin Menu.');
-                }
-                return;
-            }
+                    // Show up to 25 students
+                    const maxToShow = 25;
+                    const listToShow = lowAttList.slice(0, maxToShow);
+                    listToShow.forEach((s, idx) => {
+                        summaryText += `${idx + 1}. *${s.roll}* - ${s.name} (${s.branch}): *${s.pct.toFixed(1)}%*\n`;
+                    });
 
-            if (bodyUpper === 'SUMMARY') {
-                const students = await db.getStudents();
-                let lowAttList = [];
-                
-                students.forEach(student => {
-                    let totalAttended = 0;
-                    let totalConducted = 0;
-                    for (let subName in student.subjects) {
-                        const sub = student.subjects[subName];
-                        totalAttended += parseInt(sub.attended) || 0;
-                        totalConducted += parseInt(sub.conducted) || 0;
+                    if (lowAttList.length > maxToShow) {
+                        summaryText += `\n_...and ${lowAttList.length - maxToShow} more. Please view the Faculty Dashboard for the full list._`;
                     }
-                    const overallPct = totalConducted > 0 ? (totalAttended / totalConducted) * 100 : 0;
-                    if (overallPct < 75.0) {
-                        lowAttList.push({
-                            roll: student.roll,
-                            name: student.name,
-                            branch: student.branch,
-                            pct: overallPct
-                        });
-                    }
-                });
 
-                if (lowAttList.length === 0) {
-                    await msg.reply('🎉 All students currently maintain attendance at or above *75%*!');
+                    summaryText += `\n\n_Type *ALERT ALL* to send warnings to all of them._`;
+                    await msg.reply(summaryText);
                     return;
                 }
 
-                // Sort by attendance ascending
-                lowAttList.sort((a, b) => a.pct - b.pct);
-
-                let summaryText = `📊 *Low Attendance Summary (<75%)*\nTotal students below criteria: *${lowAttList.length}*\n\n`;
-                
-                // Show up to 25 students
-                const maxToShow = 25;
-                const listToShow = lowAttList.slice(0, maxToShow);
-                listToShow.forEach((s, idx) => {
-                    summaryText += `${idx + 1}. *${s.roll}* - ${s.name} (${s.branch}): *${s.pct.toFixed(1)}%*\n`;
-                });
-
-                if (lowAttList.length > maxToShow) {
-                    summaryText += `\n_...and ${lowAttList.length - maxToShow} more. Please view the Faculty Dashboard for the full list._`;
-                }
-
-                summaryText += `\n\n_Type *ALERT ALL* to send warnings to all of them._`;
-                await msg.reply(summaryText);
-                return;
-            }
-
-            if (bodyUpper === 'ALERT ALL') {
-                session.step = 'CONFIRM_ALERT_ALL';
-                const confirmText = `⚠️ *CONFIRM BROADCAST*
+                if (bodyUpper === 'ALERT ALL') {
+                    session.step = 'CONFIRM_ALERT_ALL';
+                    const confirmText = `⚠️ *CONFIRM BROADCAST*
 You are about to send warning messages to all students with overall attendance *below 75%*.
 
 To verify and send, type exactly: *CONFIRM ALERT*
 To cancel and return, type anything else.`;
-                await msg.reply(confirmText);
-                return;
-            }
-
-            // Assume it is a roll number query
-            const student = await db.getStudentByRoll(bodyUpper);
-            if (student) {
-                let totalAttended = 0;
-                let totalConducted = 0;
-                let breakdownText = '';
-
-                for (let subName in student.subjects) {
-                    const sub = student.subjects[subName];
-                    totalAttended += parseInt(sub.attended) || 0;
-                    totalConducted += parseInt(sub.conducted) || 0;
-                    const pct = sub.conducted > 0 ? ((sub.attended / sub.conducted) * 100).toFixed(1) : '0.0';
-                    const statusIcon = parseFloat(pct) >= 75.0 ? '🟢' : '🔴';
-                    breakdownText += `\n${statusIcon} *${subName}:* ${sub.attended}/${sub.conducted} (${pct}%)`;
+                    await msg.reply(confirmText);
+                    return;
                 }
 
-                const overallPct = totalConducted > 0 ? ((totalAttended / totalConducted) * 100).toFixed(1) : '0.0';
-                const overallPctNum = parseFloat(overallPct);
+                // Assume it is a roll number query
+                const student = await db.getStudentByRoll(bodyUpper);
+                if (student) {
+                    let totalAttended = 0;
+                    let totalConducted = 0;
+                    let breakdownText = '';
 
-                let advice = '';
-                if (overallPctNum < 75.0) {
-                    const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
-                    advice = `⚠️ *Action Required:* Student needs to attend *${classesToAttend}* more consecutive classes to reach *75%*.`;
-                } else {
-                    const classesToSkip = Math.max(0, Math.floor((4 * totalAttended) / 3 - totalConducted));
-                    advice = `✅ *Good Standing:* Student can miss up to *${classesToSkip}* classes consecutively.`;
-                }
+                    for (let subName in student.subjects) {
+                        const sub = student.subjects[subName];
+                        totalAttended += parseInt(sub.attended) || 0;
+                        totalConducted += parseInt(sub.conducted) || 0;
+                        const pct = sub.conducted > 0 ? ((sub.attended / sub.conducted) * 100).toFixed(1) : '0.0';
+                        const statusIcon = parseFloat(pct) >= 75.0 ? '🟢' : '🔴';
+                        breakdownText += `\n${statusIcon} *${subName}:* ${sub.attended}/${sub.conducted} (${pct}%)`;
+                    }
 
-                const responseText = `📋 *ATTENDANCE REPORT (ADMIN VIEW)*
+                    const overallPct = totalConducted > 0 ? ((totalAttended / totalConducted) * 100).toFixed(1) : '0.0';
+                    const overallPctNum = parseFloat(overallPct);
+
+                    let advice = '';
+                    if (overallPctNum < 75.0) {
+                        const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
+                        advice = `⚠️ *Action Required:* Student needs to attend *${classesToAttend}* more consecutive classes to reach *75%*.`;
+                    } else {
+                        const classesToSkip = Math.max(0, Math.floor((4 * totalAttended) / 3 - totalConducted));
+                        advice = `✅ *Good Standing:* Student can miss up to *${classesToSkip}* classes consecutively.`;
+                    }
+
+                    const responseText = `📋 *ATTENDANCE REPORT (ADMIN VIEW)*
 👤 *Name:* ${student.name}
 🆔 *Roll No:* ${student.roll}
 🎓 *Branch:* ${student.branch}
@@ -341,78 +324,78 @@ To cancel and return, type anything else.`;
 ${advice}
 
 _Enter another Roll Number or type *RESET* to view Admin Menu._`;
-                await msg.reply(responseText);
-            } else {
-                await msg.reply(`❌ Roll Number or command *${body}* not recognized.\n\nType *RESET* to open the HOD/Admin Control Menu.`);
-            }
-
-        } catch (err) {
-            console.error('Error in Admin chatbot flow:', err.message);
-            await msg.reply('⚠️ Sorry, there was an error processing your query. Type *RESET* to retry.');
-        }
-        return;
-    }
-
-    // Check session or reset
-    let session = sessions.get(from);
-    if (!session || bodyUpper === 'RESET' || bodyUpper === 'START' || bodyUpper === 'HI' || bodyUpper === 'HELLO' || bodyUpper === 'MENU') {
-        session = { step: 'WELCOME', selectedBranch: '', lastRollNumber: '' };
-        sessions.set(from, session);
-    }
-
-    let responseText = '';
-
-    try {
-        // Fetch branches dynamically from DB
-        const students = await db.getStudents();
-        const branches = Array.from(new Set(students.map(s => s.branch.toUpperCase())));
-
-        if (session.step === 'WELCOME') {
-            // Check if user replied with a valid branch
-            if (branches.includes(bodyUpper)) {
-                session.selectedBranch = bodyUpper;
-                session.step = 'BRANCH_SELECTED';
-                responseText = `Selected Branch: *${bodyUpper}*.\n\nPlease type your *Roll Number* to fetch your attendance report (e.g. 23CSE001):`;
-            } else {
-                let branchesListText = branches.map(b => `• *${b}*`).join('\n');
-                responseText = `👋 *Welcome to the Aditya University Attendance Bot!*\n\nPlease select or type your *Branch Code* from the options below to get started:\n\n${branchesListText}\n\n_(Reply with the exact branch code, e.g. CSE)_`;
-            }
-        } 
-        
-        else if (session.step === 'BRANCH_SELECTED') {
-            // Find student
-            const student = await db.getStudentByRoll(bodyUpper);
-            
-            if (student && student.branch.toUpperCase() === session.selectedBranch) {
-                session.lastRollNumber = bodyUpper;
-                session.step = 'RESULTS';
-                
-                let totalAttended = 0;
-                let totalConducted = 0;
-                let breakdownText = '';
-
-                for (let subName in student.subjects) {
-                    const sub = student.subjects[subName];
-                    totalAttended += sub.attended;
-                    totalConducted += sub.conducted;
-                    const pct = sub.conducted > 0 ? ((sub.attended / sub.conducted) * 100).toFixed(1) : '0.0';
-                    const statusIcon = parseFloat(pct) >= 75.0 ? '🟢' : '🔴';
-                    breakdownText += `\n${statusIcon} *${subName}:* ${sub.attended}/${sub.conducted} (${pct}%)`;
-                }
-
-                const overallPct = totalConducted > 0 ? ((totalAttended / totalConducted) * 100).toFixed(1) : '0.0';
-                const overallPctNum = parseFloat(overallPct);
-
-                let advice = '';
-                if (overallPctNum < 75.0) {
-                    const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
-                    advice = `⚠️ *Action Required:* You need to attend *${classesToAttend}* more consecutive classes to reach *75%* overall attendance. Currently at *${overallPct}%*.`;
+                    await msg.reply(responseText);
                 } else {
-                    const classesToSkip = Math.max(0, Math.floor((4 * totalAttended) / 3 - totalConducted));
-                    advice = `✅ *Good Standing:* You can miss up to *${classesToSkip}* classes consecutively and still maintain at least *75%* overall attendance. Currently at *${overallPct}%*.`;
+                    await msg.reply(`❌ Roll Number or command *${body}* not recognized.\n\nType *RESET* to open the HOD/Admin Control Menu.`);
                 }
 
-                responseText = `📋 *ATTENDANCE REPORT*
+            } catch (err) {
+                console.error('Error in Admin chatbot flow:', err.message);
+                await msg.reply('⚠️ Sorry, there was an error processing your query. Type *RESET* to retry.');
+            }
+            return;
+        }
+
+        // Check session or reset
+        let session = sessions.get(from);
+        if (!session || bodyUpper === 'RESET' || bodyUpper === 'START' || bodyUpper === 'HI' || bodyUpper === 'HELLO' || bodyUpper === 'MENU') {
+            session = { step: 'WELCOME', selectedBranch: '', lastRollNumber: '' };
+            sessions.set(from, session);
+        }
+
+        let responseText = '';
+
+        try {
+            // Fetch branches dynamically from DB
+            const students = await db.getStudents();
+            const branches = Array.from(new Set(students.map(s => s.branch.toUpperCase())));
+
+            if (session.step === 'WELCOME') {
+                // Check if user replied with a valid branch
+                if (branches.includes(bodyUpper)) {
+                    session.selectedBranch = bodyUpper;
+                    session.step = 'BRANCH_SELECTED';
+                    responseText = `Selected Branch: *${bodyUpper}*.\n\nPlease type your *Roll Number* to fetch your attendance report (e.g. 23CSE001):`;
+                } else {
+                    let branchesListText = branches.map(b => `• *${b}*`).join('\n');
+                    responseText = `👋 *Welcome to the Aditya University Attendance Bot!*\n\nPlease select or type your *Branch Code* from the options below to get started:\n\n${branchesListText}\n\n_(Reply with the exact branch code, e.g. CSE)_`;
+                }
+            } 
+            
+            else if (session.step === 'BRANCH_SELECTED') {
+                // Find student
+                const student = await db.getStudentByRoll(bodyUpper);
+                
+                if (student && student.branch.toUpperCase() === session.selectedBranch) {
+                    session.lastRollNumber = bodyUpper;
+                    session.step = 'RESULTS';
+                    
+                    let totalAttended = 0;
+                    let totalConducted = 0;
+                    let breakdownText = '';
+
+                    for (let subName in student.subjects) {
+                        const sub = student.subjects[subName];
+                        totalAttended += sub.attended;
+                        totalConducted += sub.conducted;
+                        const pct = sub.conducted > 0 ? ((sub.attended / sub.conducted) * 100).toFixed(1) : '0.0';
+                        const statusIcon = parseFloat(pct) >= 75.0 ? '🟢' : '🔴';
+                        breakdownText += `\n${statusIcon} *${subName}:* ${sub.attended}/${sub.conducted} (${pct}%)`;
+                    }
+
+                    const overallPct = totalConducted > 0 ? ((totalAttended / totalConducted) * 100).toFixed(1) : '0.0';
+                    const overallPctNum = parseFloat(overallPct);
+
+                    let advice = '';
+                    if (overallPctNum < 75.0) {
+                        const classesToAttend = Math.max(0, Math.ceil(3 * totalConducted - 4 * totalAttended));
+                        advice = `⚠️ *Action Required:* You need to attend *${classesToAttend}* more consecutive classes to reach *75%* overall attendance. Currently at *${overallPct}%*.`;
+                    } else {
+                        const classesToSkip = Math.max(0, Math.floor((4 * totalAttended) / 3 - totalConducted));
+                        advice = `✅ *Good Standing:* You can miss up to *${classesToSkip}* classes consecutively and still maintain at least *75%* overall attendance. Currently at *${overallPct}%*.`;
+                    }
+
+                    responseText = `📋 *ATTENDANCE REPORT*
 👤 *Name:* ${student.name}
 🆔 *Roll No:* ${student.roll}
 🎓 *Branch:* ${student.branch}
@@ -424,32 +407,98 @@ _Enter another Roll Number or type *RESET* to view Admin Menu._`;
 ${advice}
 
 _Type *RESET* to check another student._`;
-            } else {
-                responseText = `❌ Roll Number *${body}* not found in the *${session.selectedBranch}* branch.\n\nPlease type your roll number again, or reply *RESET* to change branch.`;
+                } else {
+                    responseText = `❌ Roll Number *${body}* not found in the *${session.selectedBranch}* branch.\n\nPlease type your roll number again, or reply *RESET* to change branch.`;
+                }
+            } 
+            
+            else if (session.step === 'RESULTS') {
+                // Any message resets in this state
+                session.step = 'WELCOME';
+                session.selectedBranch = '';
+                let branchesListText = branches.map(b => `• *${b}*`).join('\n');
+                responseText = `👋 *Check Another Record*\n\nPlease select or type a *Branch Code* to start:\n\n${branchesListText}`;
             }
-        } 
-        
-        else if (session.step === 'RESULTS') {
-            // Any message resets in this state
-            session.step = 'WELCOME';
-            session.selectedBranch = '';
-            let branchesListText = branches.map(b => `• *${b}*`).join('\n');
-            responseText = `👋 *Check Another Record*\n\nPlease select or type a *Branch Code* to start:\n\n${branchesListText}`;
+
+            // Direct Reply using whatsapp-web.js
+            await msg.reply(responseText);
+
+        } catch (err) {
+            console.error('Error in chatbot flow:', err.message);
+            try {
+                await msg.reply(`⚠️ Sorry, there was an error processing your query. Please type *RESET* to try again.`);
+            } catch(e) {}
         }
+    });
+}
 
-        // Direct Reply using whatsapp-web.js
-        await msg.reply(responseText);
-
-    } catch (err) {
-        console.error('Error in chatbot flow:', err.message);
+async function initializeWhatsAppClient() {
+    console.log('[WhatsApp] Initializing client...');
+    if (client) {
         try {
-            await msg.reply(`⚠️ Sorry, there was an error processing your query. Please type *RESET* to try again.`);
-        } catch(e) {}
+            console.log('[WhatsApp] Destroying existing client instance...');
+            await client.destroy();
+        } catch (err) {
+            console.warn('[WhatsApp] Error destroying client:', err.message);
+        }
     }
-});
 
-// Initialize WhatsApp Client
-client.initialize();
+    let authStrategy;
+    if (process.env.MONGODB_URI) {
+        console.log('[WhatsApp] MONGODB_URI detected. Using RemoteAuth with MongoDB...');
+        try {
+            // Ensure mongoose is connected
+            if (mongoose.connection.readyState !== 1) {
+                await mongoose.connect(process.env.MONGODB_URI);
+                console.log('[WhatsApp] Mongoose connected for RemoteAuth.');
+            }
+            const store = new MongoStore({ mongoose: mongoose });
+            authStrategy = new RemoteAuth({
+                clientId: 'attendance-bot',
+                store: store,
+                backupSyncIntervalMs: 60000
+            });
+        } catch (err) {
+            console.error('[WhatsApp] RemoteAuth setup failed, falling back to LocalAuth:', err.message);
+            authStrategy = new LocalAuth();
+        }
+    } else {
+        console.log('[WhatsApp] No MONGODB_URI detected. Using LocalAuth...');
+        authStrategy = new LocalAuth();
+    }
+
+    client = new Client({
+        authStrategy: authStrategy,
+        authTimeoutMs: 90000,
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        puppeteer: {
+            headless: true,
+            executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || systemChromePath || undefined,
+            args: [
+                '--no-sandbox', 
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--no-first-run',
+                '--no-zygote',
+                '--disable-gpu',
+                '--ignore-certificate-errors',
+                '--ignore-certificate-errors-spki-list',
+                '--disable-extensions',
+                '--disable-default-apps',
+                '--js-flags="--max-old-space-size=150"'
+            ]
+        }
+    });
+
+    registerClientEvents(client);
+
+    try {
+        await client.initialize();
+    } catch (err) {
+        console.error('[WhatsApp] Failed to initialize client:', err.message);
+    }
+}
 
 /* ==========================================
    JWT AUTHENTICATION MIDDLEWARE
@@ -808,4 +857,9 @@ app.listen(PORT, async () => {
         console.error('Failed to initialize database schema:', err.message);
     }
     console.log(`Server is running on http://localhost:${PORT}`);
+    
+    // Dynamically initialize WhatsApp Web client (RemoteAuth or LocalAuth)
+    initializeWhatsAppClient().catch(err => {
+        console.error('[WhatsApp] Startup initialization failed:', err.message);
+    });
 });
