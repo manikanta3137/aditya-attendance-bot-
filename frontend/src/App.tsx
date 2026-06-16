@@ -22,8 +22,8 @@ function App() {
       <nav className="relative z-10 max-w-7xl mx-auto px-8 py-6 flex flex-row items-center justify-between">
         
         {/* Logo */}
-        <a href="#" className="text-3xl tracking-tight text-white focus:outline-none" style={{ fontFamily: "'Instrument Serif', serif" }}>
-          Velorah<sup className="text-xs font-sans font-medium ml-0.5">®</sup>
+        <a href="#" className="text-3xl tracking-tight text-white focus:outline-none flex items-center gap-2" style={{ fontFamily: "'Instrument Serif', serif" }}>
+          Aditya Portal<span className="text-xs font-sans font-medium bg-white/10 px-2 py-0.5 rounded-full ml-1 text-white/85">v1.0</span>
         </a>
 
         {/* Links */}
@@ -31,24 +31,18 @@ function App() {
           <a href="#" className="text-sm font-medium text-white transition-colors duration-200">
             Home
           </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
-            Studio
+          <a href="/dashboard/" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
+            Faculty Dashboard
           </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
-            About
-          </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
-            Journal
-          </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
-            Reach Us
+          <a href="https://www.aditya.ac.in" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200">
+            Aditya University
           </a>
         </div>
 
         {/* CTA Button */}
         <div>
           <a href="/dashboard/" className="liquid-glass rounded-full px-6 py-2.5 text-sm font-medium text-white cursor-pointer hover:scale-[1.03] transition-all duration-300 focus:outline-none inline-block text-center">
-            Begin Journey
+            Enter Dashboard
           </a>
         </div>
       </nav>
@@ -61,20 +55,19 @@ function App() {
           className="text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] leading-[0.95] tracking-[-2.46px] text-white max-w-6xl font-normal animate-fade-rise"
           style={{ fontFamily: "'Instrument Serif', serif" }}
         >
-          Where <em className="not-italic text-muted-foreground italic">dreams</em> rise <br />
-          <em className="not-italic text-muted-foreground italic">through the silence.</em>
+          AI-Powered <em className="not-italic text-muted-foreground italic">Attendance</em> Bot <br />
+          <em className="not-italic text-muted-foreground italic">for Aditya University.</em>
         </h1>
 
         {/* Subtext */}
         <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-2xl mt-8 leading-relaxed font-sans font-light animate-fade-rise-delay">
-          We're designing tools for deep thinkers, bold creators, and quiet rebels. 
-          Amid the chaos, we build digital spaces for sharp focus and inspired work.
+          Exposing live statistics, subject-wise analytics, and direct WhatsApp chatbot notifications. A production-grade portal designed for HODs, Faculty, and Students of Aditya University.
         </p>
 
         {/* CTA Button */}
         <div>
           <a href="/dashboard/" className="liquid-glass rounded-full px-14 py-5 text-base font-semibold text-white mt-12 cursor-pointer hover:scale-[1.03] transition-all duration-300 focus:outline-none animate-fade-rise-delay-2 shadow-lg shadow-black/20 inline-block text-center">
-            Begin Journey
+            Enter Dashboard
           </a>
         </div>
         
@@ -89,7 +82,7 @@ function App() {
 
       {/* Footer Details */}
       <footer className="relative z-10 w-full py-10 bg-background/90 text-center text-xs text-muted-foreground font-sans tracking-widest uppercase border-t border-white/5">
-        <p>© 2026 Velorah Labs. All Rights Reserved.</p>
+        <p>© 2026 Aditya University Attendance Bot. All Rights Reserved.</p>
       </footer>
 
     </div>
