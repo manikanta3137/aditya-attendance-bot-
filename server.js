@@ -543,7 +543,7 @@ app.post('/api/login', (req, res) => {
             maxAge: 2 * 60 * 60 * 1000 // 2 hours
         });
 
-        return res.json({ success: true, username, role: 'faculty' });
+        return res.json({ success: true, username, role: 'faculty', token });
     }
 
     return res.status(400).json({ error: 'Invalid username or password' });

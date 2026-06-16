@@ -1,6 +1,16 @@
 // State variables
 let currentEditRoll = ""; // If empty, we are adding a new student
 
+// Helper to automatically attach JWT token from localStorage to outgoing requests
+async function apiFetch(url, options = {}) {
+    const token = localStorage.getItem('token');
+    if (token) {
+        options.headers = options.headers || {};
+        options.headers['Authorization'] = `Bearer ${token}`;
+    }
+    return fetch(url, options);
+}
+
 // Helper to calculate overall percentage and advice classes
 function calculateStats(student) {
     let totalAttended = 0;
@@ -31,7 +41,7 @@ function calculateStats(student) {
 // Check if user is logged in on load
 async function checkAuth() {
     try {
-        const res = await fetch('/api/me');
+        const res = await apiFetch('/api/me');
         const data = await res.json();
         
         const authOverlay = document.getElementById("authOverlay");
@@ -74,6 +84,9 @@ async function handleLogin(e) {
         const data = await res.json();
         
         if (res.ok && data.success) {
+            if (data.token) {
+                localStorage.setItem('token', data.token);
+            }
             checkAuth();
         } else {
             alert(`❌ Login Failed: ${data.error || 'Invalid credentials'}`);
@@ -86,7 +99,8 @@ async function handleLogin(e) {
 // Handle Logout
 async function handleLogout() {
     try {
-        await fetch('/api/logout', { method: 'POST' });
+        await apiFetch('/api/logout', { method: 'POST' });
+        localStorage.removeItem('token');
         checkAuth();
     } catch (err) {
         console.error('Error logging out:', err);
@@ -100,7 +114,7 @@ async function loadStudentDatabase(query = "") {
 
     try {
         const url = query ? `/api/students?search=${encodeURIComponent(query)}` : '/api/students';
-        const res = await fetch(url);
+        const res = await apiFetch(url);
         if (!res.ok) {
             if (res.status === 401) return checkAuth();
             throw new Error('Failed to fetch records');
@@ -181,7 +195,7 @@ function openAddModal() {
 
 async function openEditModal(roll) {
     try {
-        const res = await fetch(`/api/students/${roll}`);
+        const res = await apiFetch(`/api/students/${roll}`);
         if (!res.ok) throw new Error('Failed to load student details');
         
         const student = await res.json();
@@ -273,7 +287,7 @@ async function saveStudentForm(e) {
             method = 'PUT';
         }
 
-        const res = await fetch(url, {
+        const res = await apiFetch(url, {
             method: method,
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -299,7 +313,7 @@ async function deleteStudent(roll) {
     }
 
     try {
-        const res = await fetch(`/api/students/${roll}`, { method: 'DELETE' });
+        const res = await apiFetch(`/api/students/${roll}`, { method: 'DELETE' });
         const data = await res.json();
         
         if (res.ok) {
@@ -319,7 +333,7 @@ async function sendWhatsAppAlert(roll) {
     }
 
     try {
-        const res = await fetch(`/api/students/${roll}/send-alert`, { method: 'POST' });
+        const res = await apiFetch(`/api/students/${roll}/send-alert`, { method: 'POST' });
         const data = await res.json();
 
         if (res.ok) {
@@ -339,7 +353,7 @@ async function sendWhatsAppAlert(roll) {
 // CSV Tab Functions
 async function exportCSV() {
     try {
-        const res = await fetch('/api/export-csv');
+        const res = await apiFetch('/api/export-csv');
         if (!res.ok) throw new Error('Failed to generate CSV');
         const csvText = await res.text();
         document.getElementById("csvTextArea").value = csvText;
@@ -369,7 +383,7 @@ async function importCSV() {
     }
 
     try {
-        const res = await fetch('/api/import-csv', {
+        const res = await apiFetch('/api/import-csv', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ csvText })
@@ -404,7 +418,7 @@ async function logoutWhatsApp() {
     }
     
     try {
-        const res = await fetch('/api/logout-whatsapp', { method: 'POST' });
+        const res = await apiFetch('/api/logout-whatsapp', { method: 'POST' });
         const data = await res.json();
         
         if (res.ok && data.success) {
@@ -434,7 +448,7 @@ function toggleQrModal() {
 // Check WhatsApp connection status
 async function checkWhatsAppStatus() {
     try {
-        const res = await fetch('/api/status');
+        const res = await apiFetch('/api/status');
         const data = await res.json();
 
         const statusDot = document.getElementById("whatsappStatusDot");
